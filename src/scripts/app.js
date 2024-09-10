@@ -209,16 +209,13 @@ const gameDataArray = {
 // GET GAME DATA
 // ======================
 
-let currentLevel =
-  parseInt(localStorage.getItem("13kjsgames.frantic13.currentLevel")) || 1;
+let currentLevel = parseInt(localStorage.getItem("13kjsgames.frantic13.currentLevel")) || 1;
 
 console.log(currentLevel);
 
-let lastIndex =
-  parseInt(localStorage.getItem("13kjsgames.frantic13.lastGameIndex")) || 0;
+let lastIndex = parseInt(localStorage.getItem("13kjsgames.frantic13.lastGameIndex")) || 0;
 
-let hasFailedLastGame =
-  localStorage.getItem("13kjsgames.frantic13.hasFailedLastGame") === "true";
+let hasFailedLastGame = localStorage.getItem("13kjsgames.frantic13.hasFailedLastGame") === "true";
 
 function updateLevelDisplay(currentLevel) {
   document.querySelector(".level").textContent = `Level ${currentLevel}`;

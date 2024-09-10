@@ -1,4 +1,4 @@
-import createMiniDND from "./miniDND.js";
+//import createMiniDND from "./miniDND.js"; Don't need to do this as the gulp task compile the js into one file.
 
 const miniDND = createMiniDND();
 

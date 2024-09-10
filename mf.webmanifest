@@ -1,0 +1,1 @@
+{ "name": "Scrammbl for JS13K 2024 comp", "start_url": "index.html", "serviceworker": { "src": "sw.js" }, "icons": [ { "src": "ico.svg", "type": "image/svg+xml", "sizes": "160x160" } ], "display": "fullscreen", "orientation": "any" }

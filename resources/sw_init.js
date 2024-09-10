@@ -11,7 +11,8 @@ function pwaInit() {
 	//_standalone = window.matchMedia('(display-mode: standalone)').matches;
 	
 	// to be implemented - feel free to overwrite.
-	init();
+	//init();
+	console.log("PWA initialized");
 }
 
 // Progressive web apps can work only with secure connections.

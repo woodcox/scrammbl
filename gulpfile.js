@@ -314,8 +314,9 @@ function getDateString(shorter) {
 }
 
 // Exports
-exports.default = series(prep, ico, sw, app, cs, mf, mangle, assets, pack, clean, archive, check, watch);
-exports.sync = series(app, cs, mangle, assets, pack, clean, reload);
+exports.default = series(prep, ico, sw, app, cs, mf, mangle, assets, pack, clean, archive, check);
+// watch);
+exports.sync = series(app, cs, mangle, assets, pack, clean); //reload);
 exports.zip = series(archive, check);
 
 /*

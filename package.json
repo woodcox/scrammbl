@@ -1,13 +1,14 @@
 {
-	"name": "js13k_template",
+	"name": "scrammbl",
 	"version": "0.0.1",
-	"title": "JS13K Template",
-	"description": "js13k progressive web app starter pack",
+	"title": "Scrammbl for JS13K 2024 comp",
+	"description": "A fast paced word game for js13k",
 	"keywords": [
 		"js13kgames",
 		"js13k",
 		"pwa",
-		"template"
+		"word",
+		"game"
 	],
 	"orientation": "any",
 	"iconExtension": "svg",
@@ -46,9 +47,9 @@
 		"url": "git+https://github.com/foumart/JS.13kGames.git"
 	},
 	"author": {
-		"name": "Noncho Savov",
-		"email": "contact@foumartgames.com",
-		"url": "https://www.foumartgames.com/"
+		"name": "woodcox",
+		"email": "",
+		"url": ""
 	},
 	"license": "MIT"
 }

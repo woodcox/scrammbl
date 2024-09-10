@@ -11,7 +11,7 @@ concurrency:
 
 # Conditional environmental if's      
 env:
-  UPDATE_NPM: true # false = deploy, true = update npm
+  UPDATE_NPM: false # false = deploy, true = update npm
 
 jobs:
   build_deploy:

@@ -227,7 +227,7 @@ function pack(callback) {
 		.pipe(htmlmin({ collapseWhitespace: true, removeComments: true, removeAttributeQuotes: true }))
 		.pipe(replace('"', '', replaceOptions))
 		.pipe(replace('rep_css', '<style>' + css + '</style>', replaceOptions))
-		.pipe(replace('rep_js', '<script type="module">' + js + '</script>', replaceOptions))
+		.pipe(replace('rep_js', '<script>' + js + '</script>', replaceOptions))
 		.pipe(concat('index.html'))
 		.pipe(dest(dir + '/'))
 		.on('end', callback);

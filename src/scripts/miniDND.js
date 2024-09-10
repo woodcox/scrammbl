@@ -283,12 +283,12 @@ function createMiniDND() {
     };
   
     // Add event listeners for mouse and touch events
-    addEventListener("mousedown", pointerdown);
-    addEventListener("touchstart", pointerdown);
-    addEventListener("mousemove", pointermove);
-    addEventListener("touchmove", pointermove, { passive: false });
-    addEventListener("mouseup", pointerup);
-    addEventListener("touchend", pointerup);
+    document.addEventListener("mousedown", pointerdown);
+    document.addEventListener("touchstart", pointerdown);
+    document.addEventListener("mousemove", pointermove);
+    document.addEventListener("touchmove", pointermove, { passive: false });
+    document.addEventListener("mouseup", pointerup);
+    document.addEventListener("touchend", pointerup);
   
     return {
       onDrop(callback) {

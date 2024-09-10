@@ -52,12 +52,13 @@ if ("serviceWorker" in navigator && _online) {
 // Record if the game is being run as a PWA in its own window, separate from the browser.
 //let _standalone;
 
-function pwaInit() {
+// TODO: may need to look as this
+/*function pwaInit() {
 	//_standalone = window.matchMedia('(display-mode: standalone)').matches;
 	
 	// to be implemented - feel free to overwrite.
 	init();
-}
+}*/
 
 /*
 // Provide your own in-app install experience: https://web.dev/customize-install/

@@ -270,7 +270,7 @@ let correctPositions = {};
 
 if (!currentGameData) {
   console.error("No game data available.");
-  corrrectPositions = {};
+  correctPositions = {};
 } else {
   // Use the correctPositions from the current game data
   correctPositions = currentGameData.correctPositions;
@@ -730,8 +730,7 @@ miniDND.onDrop((event) => {
 // ======================
 // Initialize when the page loads
 document.addEventListener("DOMContentLoaded", () => {
-  const currentLevel =
-    parseInt(localStorage.getItem("13kjsgames.frantic13.currentLevel")) || 1;
+  const currentLevel = parseInt(localStorage.getItem("13kjsgames.frantic13.currentLevel")) || 1;
   const howToPlayPopover = document.getElementById("howToPlay");
                                                    // Check if it's level 1
   //if (currentLevel === 1) {

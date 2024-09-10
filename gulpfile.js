@@ -108,8 +108,8 @@ function sw(callback) {
 				closureCompiler({
 					compilation_level: 'ADVANCED_OPTIMIZATIONS',
 					warning_level: 'QUIET',
-					language_in: 'ECMASCRIPT6',
-					language_out: 'ECMASCRIPT6'
+					language_in: 'ECMASCRIPT_2020',
+					language_out: 'ECMASCRIPT_2020'
 				})
 			))
 			.pipe(gulpif(!debug, replace('window.caches', 'caches', replaceOptions)))

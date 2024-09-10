@@ -1,4 +1,4 @@
-//import createMiniDND from "./miniDND.js";
+import createMiniDND from "./miniDND.js";
 
 const miniDND = createMiniDND();
 

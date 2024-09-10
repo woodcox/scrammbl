@@ -297,4 +297,4 @@ function createMiniDND() {
     };
   }
   
-  export default createMiniDND;
+  //export default createMiniDND;

@@ -209,13 +209,13 @@ const gameDataArray = {
 // GET GAME DATA
 // ======================
 
-let currentLevel = parseInt(localStorage.getItem("13kjsgames.frantic13.currentLevel")) || 1;
+let currentLevel = parseInt(window.localStorage.getItem("13kjsgames.frantic13.currentLevel")) || 1;
 
 console.log(currentLevel);
 
-let lastIndex = parseInt(localStorage.getItem("13kjsgames.frantic13.lastGameIndex")) || 0;
+let lastIndex = parseInt(window.localStorage.getItem("13kjsgames.frantic13.lastGameIndex")) || 0;
 
-let hasFailedLastGame = localStorage.getItem("13kjsgames.frantic13.hasFailedLastGame") === "true";
+let hasFailedLastGame = window.localStorage.getItem("13kjsgames.frantic13.hasFailedLastGame") === "true";
 
 function updateLevelDisplay(currentLevel) {
   document.querySelector(".level").textContent = `Level ${currentLevel}`;
@@ -229,16 +229,16 @@ function updateNextGameIndex(success) {
   if (success) {
     // Move to the next level and reset the index if the level was completed
     currentLevel++;
-    localStorage.setItem("13kjsgames.frantic13.currentLevel", currentLevel);
+    window.localStorage.setItem("13kjsgames.frantic13.currentLevel", currentLevel);
     //updateLevelDisplay(currentLevel); // Update the level display
     lastIndex = 0; // Start from the first index for the new level
-    localStorage.setItem("13kjsgames.frantic13.lastGameIndex", lastIndex);
-    localStorage.setItem("13kjsgames.frantic13.hasFailedLastGame", false);
+    window.localStorage.setItem("13kjsgames.frantic13.lastGameIndex", lastIndex);
+    window.localStorage.setItem("13kjsgames.frantic13.hasFailedLastGame", false);
   } else {
     // If the player failed, increase the index for the current level
     lastIndex = (lastIndex + 1) % levelData.length;
-    localStorage.setItem("13kjsgames.frantic13.lastGameIndex", lastIndex);
-    localStorage.setItem("13kjsgames.frantic13.hasFailedLastGame", true);
+    window.localStorage.setItem("13kjsgames.frantic13.lastGameIndex", lastIndex);
+    window.localStorage.setItem("13kjsgames.frantic13.hasFailedLastGame", true);
   }
 
   return { currentLevel, lastIndex };
@@ -405,7 +405,7 @@ function updateMoveCounter() {
 // Function to calculate and display average moves and personal best (PB)
 function calculateStats() {
   const storedData =
-    JSON.parse(localStorage.getItem("13kjsgames.frantic.personalBests")) || [];
+    JSON.parse(window.localStorage.getItem("13kjsgames.frantic.personalBests")) || [];
 
   // Get the personal best moves and best time from local storage
   const personalBestMoves = storedData.bestMoves || Infinity;
@@ -652,8 +652,8 @@ function gameCompleted() {
 // ======================
 
 function resetGameProgress() {
-  localStorage.setItem("13kjsgames.frantic13.currentLevel", 1); // Reset to level 1
-  localStorage.setItem("13kjsgames.frantic13.lastGameIndex", 0); // Reset index
+  window.localStorage.setItem("13kjsgames.frantic13.currentLevel", 1); // Reset to level 1
+  window.localStorage.setItem("13kjsgames.frantic13.lastGameIndex", 0); // Reset index
 }
 
 // ======================
@@ -663,7 +663,7 @@ function resetGameProgress() {
 function storeGameData(moveCount, timeTaken) {
   // Retrieve stored data or initialize an object for PB
   const storedData = JSON.parse(
-    localStorage.getItem("13kjsgames.frantic13.personalBests")
+    window.localStorage.getItem("13kjsgames.frantic13.personalBests")
   ) || {
     bestMoves: Infinity, // Use Infinity as the initial value for comparison
     bestTime: Infinity // Use Infinity for best time comparison
@@ -680,7 +680,7 @@ function storeGameData(moveCount, timeTaken) {
   }
 
   // Store the updated PB in local storage
-  localStorage.setItem(
+  window.localStorage.setItem(
     "13kjsgames.frantic13.personalBests",
     JSON.stringify(storedData)
   );
@@ -730,7 +730,7 @@ miniDND.onDrop((event) => {
 // ======================
 // Initialize when the page loads
 document.addEventListener("DOMContentLoaded", () => {
-  const currentLevel = parseInt(localStorage.getItem("13kjsgames.frantic13.currentLevel")) || 1;
+  const currentLevel = parseInt(window.localStorage.getItem("13kjsgames.frantic13.currentLevel")) || 1;
   const howToPlayPopover = document.getElementById("howToPlay");
                                                    // Check if it's level 1
   //if (currentLevel === 1) {

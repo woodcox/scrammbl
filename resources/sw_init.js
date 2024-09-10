@@ -3,6 +3,17 @@
 // Set debug to true if you want to see logs about caching / fetching of resources and other output.
 let _debug;
 
+// Record if the game is being run as a PWA in its own window, separate from the browser.
+//let _standalone;
+
+// TODO: may need to look as this
+function pwaInit() {
+	//_standalone = window.matchMedia('(display-mode: standalone)').matches;
+	
+	// to be implemented - feel free to overwrite.
+	init();
+}
+
 // Progressive web apps can work only with secure connections.
 const _online = location.protocol.substring(0, 5) === "https";
 
@@ -48,17 +59,6 @@ if ("serviceWorker" in navigator && _online) {
 
 	window.addEventListener("load", pwaInit);
 }
-
-// Record if the game is being run as a PWA in its own window, separate from the browser.
-//let _standalone;
-
-// TODO: may need to look as this
-/*function pwaInit() {
-	//_standalone = window.matchMedia('(display-mode: standalone)').matches;
-	
-	// to be implemented - feel free to overwrite.
-	init();
-}*/
 
 /*
 // Provide your own in-app install experience: https://web.dev/customize-install/

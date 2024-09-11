@@ -283,21 +283,22 @@ function createMiniDND() {
     };
   
     // Add event listeners for mouse and touch events
-    document.addEventListener("mousedown", pointerdown);
-    document.addEventListener("touchstart", pointerdown);
-    document.addEventListener("mousemove", pointermove);
-    document.addEventListener("touchmove", pointermove, { passive: false });
-    document.addEventListener("mouseup", pointerup);
-    document.addEventListener("touchend", pointerup);
+    window.addEventListener("mousedown", pointerdown);
+    window.addEventListener("touchstart", pointerdown);
+    window.addEventListener("mousemove", pointermove);
+    window.addEventListener("touchmove", pointermove, { passive: false });
+    window.addEventListener("mouseup", pointerup);
+    window.addEventListener("touchend", pointerup);
   
     return {
       onDrop(callback) {
-        document.addEventListener("dropped", callback);
+        window.addEventListener("dropped", callback);
       }
     };
   }
   
   //export default createMiniDND;
+
 //import createMiniDND from "./miniDND.js"; Don't need to do this as the gulp task compile the js into one file.
 
 const miniDND = createMiniDND();

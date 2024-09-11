@@ -239,7 +239,7 @@ function pack(callback) {
 			useShortDoctype: true,
 			collapseWhitespace: true
 		}))
-		.pipe(replace('"', '', replaceOptions))
+		//.pipe(replace('"', '', replaceOptions))
 		.pipe(replace('rep_css', '<style>' + css + '</style>', replaceOptions))
 		.pipe(replace('rep_js', '<script>' + js + '</script>', replaceOptions))
 		.pipe(concat('index.html'))

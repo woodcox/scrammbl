@@ -224,7 +224,7 @@ function pack(callback) {
 		.pipe(replace('rep_social', social != false ? social : '', replaceOptions))
 		.pipe(replace('rep_mobile', mobile != false ? mobile : '', replaceOptions))
 		.pipe(gulpif(!pwa, replace('<link rel="manifest" href="mf.webmanifest">', '', replaceOptions)))
-		.pipe(htmlmin({ collapseWhitespace: true, removeComments: true, removeAttributeQuotes: false, ignoreCustomFragments: [/\s(?:drop|spawn|move|swap)\b/] }))
+		.pipe(htmlmin({ collapseWhitespace: true, removeComments: true, ignoreCustomFragments: [/\s(?:drop|spawn|move|swap)\b/] }))
 		.pipe(replace('"', '', replaceOptions))
 		.pipe(replace('rep_css', '<style>' + css + '</style>', replaceOptions))
 		.pipe(replace('rep_js', '<script>' + js + '</script>', replaceOptions))

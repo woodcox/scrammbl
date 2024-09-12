@@ -7,7 +7,7 @@ const miniDND = createMiniDND();
 // ======================
 // The correct positions of the letters as JSON data
 
-
+gameDataArray;
 
 
 // ======================

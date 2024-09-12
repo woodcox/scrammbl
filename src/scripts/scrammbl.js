@@ -403,7 +403,9 @@ function updateMoveCounter() {
     const completedPopover = document.getElementById("game-finished");
     if (completedPopover) {
       document.getElementById("levelUp").addEventListener("click", levelUp);
+      document.getElementById("levelUp").addEventListener("touchstart", levelUp);
       document.getElementById("replayLevel").addEventListener("click", replayLevel);
+      document.getElementById("replayLevel").addEventListener("touchstart", replayLevel);
     }
   }
 }

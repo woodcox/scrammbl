@@ -731,12 +731,11 @@ miniDND.onDrop((event) => {
 // ======================
 // Initialize when the page loads
 document.addEventListener("DOMContentLoaded", () => {
-  const currentLevel = parseInt(window.localStorage.getItem("13kjsgames.frantic13.currentLevel")) || 1;
-  /*const howToPlayPopover = document.getElementById("howToPlay");
-                                                   // Check if it's level 1
-  //if (currentLevel === 1) {
+  const currentLevel = parseInt(window.localStorage.getItem("13kjsgames.frantic13.currentLevel")) || 1; // Check if it's level 1
+  const howToPlayPopover = document.getElementById("howToPlay"); 
+  if (currentLevel === 1) {
     howToPlayPopover.showPopover();  // Show how to play popover
-  //}
+  }
   const howToButton = document.getElementById("howTo");
   if (howToButton) {
     howToButton.addEventListener("click", () => {

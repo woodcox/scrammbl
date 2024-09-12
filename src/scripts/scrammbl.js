@@ -416,7 +416,7 @@ function levelUp() {
 
 function replayLevel() {
   currentLevel--;
-  localStorage.setItem("13kjsgames.frantic13.currentLevel", currentLevel);
+  window.localStorage.setItem("13kjsgames.frantic13.currentLevel", currentLevel);
   const levelData = gameDataArray[`level${currentLevel}`];
   console.log("Replay level");
   location.reload();

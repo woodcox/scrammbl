@@ -54,7 +54,7 @@
 	background-color: grey;
   }
   
-  .board-wrapper {
+  board-wrapper {
 	display: grid;
 	gap: var(--gap);
 	grid-template-columns: auto repeat(4, minmax(min(var(--tile-size), 100%), 100px)) auto;
@@ -72,7 +72,7 @@
 	grid-template-areas: ". x1 x2 x3 ." ". . . y3 ." ". st . z3 .";
   }
   
-  .game-data-wrapper {
+  game-data-wrapper {
 	grid-area: gdata;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -164,7 +164,7 @@
 	grid-area: e4;
   }
   
-  .middle-area {
+  middle-area {
 	grid-area: middle;
 	gap: var(--gap);
 	display: grid;
@@ -173,7 +173,7 @@
 	grid-template-areas: "timer timer timer" ". mid-tile ." "level level level";
   }
   
-  .middle-tile {
+  middle-tile {
 	grid-area: mid-tile;
 	justify-self: center;
 	align-self: center;

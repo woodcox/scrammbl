@@ -66,12 +66,12 @@ rep_css
 		  Close
 		</button>
 	  </div>
-	  <div class="board-wrapper">
-		<div class="middle-area">
+	  <board-wrapper>
+		<middle-area>
 		  <div class="timer">13</div>
-		  <div class="middle-tile spawn swap drop move" data-slot="tile-spawn">
+		  <middle-tile class="spawn swap drop move" data-slot="tile-spawn">
 			<div class="drag" data-tile="spawned" tabindex="0">&nbsp;</div>
-		  </div>
+		  </middle-tile>
 		  <p class="level">Level &nbsp;&nbsp;</p>
 		  <div class="endgame" id="game-over" popover>
 			<p>Time's up! Game over.</p>
@@ -85,7 +85,7 @@ rep_css
 			  Next Level
 			</button>
 		  </div>
-		</div>
+		</middle-area>
 		<div class="move drop swap" data-slot="a1">
 		  <div class="drag" data-tile="empty" data-item="tile-a1" tabindex="0">&nbsp;</div>
 		</div>
@@ -128,13 +128,13 @@ rep_css
 		<div class="move drop swap" data-slot="e3">
 		  <div class="drag" data-tile="empty" data-item="tile-e3" tabindex="0">&nbsp;</div>
 		</div>
-		<div class="game-data-wrapper">
+		<game-data-wrapper>
 		  <span>Moves: 0</span>
 		  <span>Best time: -</span>
 		  <span>PB: -</span>
 		  <span>Streak: 0</span>
-		</div>
-	  </div>
+		</game-data-wrapper>
+	  </board-wrapper>
 	  <footer>
 	  </footer>
 

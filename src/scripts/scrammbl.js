@@ -417,7 +417,10 @@ function levelUp() {
 function replayLevel() {
   
   console.log("Replay level");
+  currentLevel--;
   updateNextGameIndex(false);
+  lastIndex = (lastIndex + 1) % levelData.length;
+  localStorage.setItem("13kjsgames.frantic13.lastGameIndex", lastIndex);
   location.reload();
 }
 

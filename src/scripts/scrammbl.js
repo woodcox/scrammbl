@@ -741,7 +741,7 @@ document.addEventListener("DOMContentLoaded", () => {
     howToButton.addEventListener("click", () => {
       howToPlayPopover.showPopover();
     });
-  }*/
+  }
   displayNextLetter(); // Show the first letter in the spawn tile on load
   calculateStats(); // Calculate and display stats on page load
   updateLevelDisplay(currentLevel);

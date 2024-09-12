@@ -21,3 +21,21 @@
 *        }}
 */
 gameDataArray
+
+/**
+ * @constructor
+ * @extends {HTMLElement}
+ */
+var HTMLDialogElement = function() {};
+
+/**
+ * Shows a dialog element as a popover.
+ * @return {void}
+ */
+HTMLDialogElement.prototype.showPopover = function() {};
+
+/**
+ * Closes the popover.
+ * @return {void}
+ */
+HTMLDialogElement.prototype.close = function() {};

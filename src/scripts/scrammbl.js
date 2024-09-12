@@ -11,8 +11,8 @@ const gameDataArray = {
     {
       index: "0",
       correctPositions: {
-        a2: "S",
-        a3: "O"
+        "a2": "S",
+        "a3": "O"
       }
     }
   ],
@@ -20,9 +20,9 @@ const gameDataArray = {
     {
       index: "0",
       correctPositions: {
-        a1: "A",
-        a2: "N",
-        a3: "T"
+        "a1": "A",
+        "a2": "N",
+        "a3": "T"
       }
     }
   ],
@@ -30,10 +30,10 @@ const gameDataArray = {
     {
       index: "0",
       correctPositions: {
-        a1: "E",
-        a2: "C",
-        a3: "H",
-        a4: "O"
+        "a1": "E",
+        "a2": "C",
+        "a3": "H",
+        "a4": "O"
       }
     }
   ],
@@ -41,11 +41,11 @@ const gameDataArray = {
     {
       index: "0",
       correctPositions: {
-        a1: "H",
-        a2: "A",
-        a3: "N",
-        a4: "D",
-        b4: "O"
+        "a1": "H",
+        "a2": "A",
+        "a3": "N",
+        "a4": "D",
+        "b4": "O"
       }
     }
   ],
@@ -53,12 +53,12 @@ const gameDataArray = {
     {
       index: "0",
       correctPositions: {
-        a1: "K",
-        a2: "I",
-        a3: "W",
-        a4: "I",
-        b4: "C",
-        c4: "E"
+        "a1": "K",
+        "a2": "I",
+        "a3": "W",
+        "a4": "I",
+        "b4": "C",
+        "c4": "E"
       }
     }
   ],
@@ -66,13 +66,13 @@ const gameDataArray = {
     {
       index: "0",
       correctPositions: {
-        a1: "B",
-        a2: "O",
-        a3: "W",
-        a4: "L",
-        b4: "I",
-        c4: "M",
-        d4: "E"
+        "a1": "B",
+        "a2": "O",
+        "a3": "W",
+        "a4": "L",
+        "b4": "I",
+        "c4": "M",
+        "d4": "E"
       }
     }
   ],
@@ -80,14 +80,14 @@ const gameDataArray = {
     {
       index: "0",
       correctPositions: {
-        a1: "U",
-        a2: "G",
-        a3: "L",
-        a4: "Y",
-        b4: "E",
-        c4: "A",
-        d4: "R",
-        e4: "S"
+        "a1": "U",
+        "a2": "G",
+        "a3": "L",
+        "a4": "Y",
+        "b4": "E",
+        "c4": "A",
+        "d4": "R",
+        "e4": "S"
       }
     }
   ],
@@ -95,15 +95,15 @@ const gameDataArray = {
     {
       index: "0",
       correctPositions: {
-        a1: "D",
-        a2: "E",
-        a3: "N",
-        a4: "T",
-        b4: "A",
-        c4: "B",
-        d4: "O",
-        e4: "O",
-        b1: "O"
+        "a1": "D",
+        "a2": "E",
+        "a3": "N",
+        "a4": "T",
+        "b4": "A",
+        "c4": "B",
+        "d4": "O",
+        "e4": "O",
+        "b1": "O"
       }
     }
   ],
@@ -111,16 +111,16 @@ const gameDataArray = {
     {
       index: "0",
       correctPositions: {
-        a1: "L",
-        a2: "A",
-        a3: "V",
-        a4: "A",
-        b4: "U",
-        c4: "D",
-        d4: "I",
-        e4: "O",
-        b1: "E",
-        c1: "T"
+        "a1": "L",
+        "a2": "A",
+        "a3": "V",
+        "a4": "A",
+        "b4": "U",
+        "c4": "D",
+        "d4": "I",
+        "e4": "O",
+        "b1": "E",
+        "c1": "T"
       }
     }
   ],
@@ -128,17 +128,17 @@ const gameDataArray = {
     {
       index: "0",
       correctPositions: {
-        a1: "A",
-        a2: "Q",
-        a3: "U",
-        a4: "A",
-        b4: "G",
-        c4: "A",
-        d4: "I",
-        e4: "N",
-        b1: "P",
-        c1: "E",
-        d1: "X"
+        "a1": "A",
+        "a2": "Q",
+        "a3": "U",
+        "a4": "A",
+        "b4": "G",
+        "c4": "A",
+        "d4": "I",
+        "e4": "N",
+        "b1": "P",
+        "c1": "E",
+        "d1": "X"
       }
     }
   ],
@@ -146,18 +146,18 @@ const gameDataArray = {
     {
       index: "0",
       correctPositions: {
-        a1: "R",
-        a2: "A",
-        a3: "M",
-        a4: "P",
-        b4: "A",
-        c4: "U",
-        d4: "S",
-        e4: "E",
-        b1: "E",
-        c1: "A",
-        d1: "C",
-        e1: "H"
+        "a1": "R",
+        "a2": "A",
+        "a3": "M",
+        "a4": "P",
+        "b4": "A",
+        "c4": "U",
+        "d4": "S",
+        "e4": "E",
+        "b1": "E",
+        "c1": "A",
+        "d1": "C",
+        "e1": "H"
       }
     }
   ],
@@ -165,19 +165,19 @@ const gameDataArray = {
     {
       index: "0",
       correctPositions: {
-        a1: "F",
-        a2: "R",
-        a3: "O",
-        a4: "G",
-        b4: "H",
-        c4: "O",
-        d4: "S",
-        e4: "T",
-        b1: "R",
-        c1: "O",
-        d1: "S",
-        e1: "T",
-        e2: "O"
+        "a1": "F",
+        "a2": "R",
+        "a3": "O",
+        "a4": "G",
+        "b4": "H",
+        "c4": "O",
+        "d4": "S",
+        "e4": "T",
+        "b1": "R",
+        "c1": "O",
+        "d1": "S",
+        "e1": "T",
+        "e2": "O"
       }
     }
   ],
@@ -185,20 +185,20 @@ const gameDataArray = {
     {
       index: "0",
       correctPositions: {
-        a1: "B",
-        a2: "R",
-        a3: "E",
-        a4: "W",
-        b4: "H",
-        c4: "A",
-        d4: "L",
-        e4: "E",
-        b1: "U",
-        c1: "G",
-        d1: "G",
-        e1: "Y",
-        e2: "U",
-        e3: "L"
+        "a1": "B",
+        "a2": "R",
+        "a3": "E",
+        "a4": "W",
+        "b4": "H",
+        "c4": "A",
+        "d4": "L",
+        "e4": "E",
+        "b1": "U",
+        "c1": "G",
+        "d1": "G",
+        "e1": "Y",
+        "e2": "U",
+        "e3": "L"
       }
     }
   ]
@@ -209,13 +209,13 @@ const gameDataArray = {
 // GET GAME DATA
 // ======================
 
-let currentLevel = parseInt(window.localStorage.getItem("13kjsgames.frantic13.currentLevel")) || 1;
+let currentLevel = parseInt(window.localStorage.getItem("13kjsgames.scrammbl.currentLevel")) || 1;
 
 console.log(currentLevel);
 
-let lastIndex = parseInt(window.localStorage.getItem("13kjsgames.frantic13.lastGameIndex")) || 0;
+let lastIndex = parseInt(window.localStorage.getItem("13kjsgames.scrammbl.lastGameIndex")) || 0;
 
-let hasFailedLastGame = window.localStorage.getItem("13kjsgames.frantic13.hasFailedLastGame") === "true";
+let hasFailedLastGame = window.localStorage.getItem("13kjsgames.scrammbl.hasFailedLastGame") === "true";
 
 function updateLevelDisplay(currentLevel) {
   document.querySelector(".level").textContent = `Level ${currentLevel}`;
@@ -228,16 +228,16 @@ function updateNextGameIndex(success) {
   if (success) {
     // Move to the next level and reset the index if the level was completed
     currentLevel++;
-    window.localStorage.setItem("13kjsgames.frantic13.currentLevel", currentLevel);
+    window.localStorage.setItem("13kjsgames.scrammbl.currentLevel", currentLevel);
     //updateLevelDisplay(currentLevel); // Update the level display
     lastIndex = 0; // Start from the first index for the new level
-    window.localStorage.setItem("13kjsgames.frantic13.lastGameIndex", lastIndex);
-    window.localStorage.setItem("13kjsgames.frantic13.hasFailedLastGame", false);
+    window.localStorage.setItem("13kjsgames.scrammbl.lastGameIndex", lastIndex);
+    window.localStorage.setItem("13kjsgames.scrammbl.hasFailedLastGame", false);
   } else {
     // If the player failed, increase the index for the current level
     lastIndex = (lastIndex + 1) % levelData.length;
-    window.localStorage.setItem("13kjsgames.frantic13.lastGameIndex", lastIndex);
-    window.localStorage.setItem("13kjsgames.frantic13.hasFailedLastGame", true);
+    window.localStorage.setItem("13kjsgames.scrammbl.lastGameIndex", lastIndex);
+    window.localStorage.setItem("13kjsgames.scrammbl.hasFailedLastGame", true);
   }
 
   return { currentLevel, lastIndex };
@@ -653,8 +653,8 @@ function gameCompleted() {
 // ======================
 
 function resetGameProgress() {
-  window.localStorage.setItem("13kjsgames.frantic13.currentLevel", 1); // Reset to level 1
-  window.localStorage.setItem("13kjsgames.frantic13.lastGameIndex", 0); // Reset index
+  window.localStorage.setItem("13kjsgames.scrammbl.currentLevel", 1); // Reset to level 1
+  window.localStorage.setItem("13kjsgames.scrammbl.lastGameIndex", 0); // Reset index
 }
 
 // ======================
@@ -664,7 +664,7 @@ function resetGameProgress() {
 function storeGameData(moveCount, timeTaken) {
   // Retrieve stored data or initialize an object for PB
   const storedData = JSON.parse(
-    window.localStorage.getItem("13kjsgames.frantic13.personalBests")
+    window.localStorage.getItem("13kjsgames.scrammbl.personalBests")
   ) || {
     bestMoves: Infinity, // Use Infinity as the initial value for comparison
     bestTime: Infinity // Use Infinity for best time comparison
@@ -682,7 +682,7 @@ function storeGameData(moveCount, timeTaken) {
 
   // Store the updated PB in local storage
   window.localStorage.setItem(
-    "13kjsgames.frantic13.personalBests",
+    "13kjsgames.scrammbl.personalBests",
     JSON.stringify(storedData)
   );
 }
@@ -731,7 +731,7 @@ miniDND.onDrop((event) => {
 // ======================
 // Initialize when the page loads
 document.addEventListener("DOMContentLoaded", () => {
-  const currentLevel = parseInt(window.localStorage.getItem("13kjsgames.frantic13.currentLevel")) || 1; // Check if it's level 1
+  const currentLevel = parseInt(window.localStorage.getItem("13kjsgames.scrammbl.currentLevel")) || 1; // Check if it's level 1
   const howToPlayPopover = document.getElementById("howToPlay"); 
   if (currentLevel === 1) {
     howToPlayPopover.showPopover();  // Show how to play popover

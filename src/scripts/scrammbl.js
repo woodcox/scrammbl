@@ -284,6 +284,7 @@ function hideUnusedSlots(correctPositions) {
   const slots = document.querySelectorAll(".move"); // Select all slots
 
   for (let slot of slots) {
+  
     const slotId = slot.getAttribute("data-slot");
 
     // Skip the spawn tile slot
@@ -292,7 +293,8 @@ function hideUnusedSlots(correctPositions) {
     }
 
     // If the slot is not in the correctPositions, hide it and set data-tile to "is-hidden"
-    if (!correctPositions.hasOwnProperty(slotId)) {
+    if(!Object.prototype.hasOwnProperty.call(correctPositions, slotId)) {
+    //if (!correctPositions.hasOwnProperty(slotId)) {
       slot.classList.add("is-hidden");
     } else {
       // Ensure slots that are in correctPositions are visible

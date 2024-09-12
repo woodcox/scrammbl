@@ -380,7 +380,7 @@ function updateMoveCounter() {
   moveCount += 1;
   moveCounter.textContent = `Moves: ${moveCount}`;
   // ===========================
-  // END GAME LOGIC
+  // LEVEL COMPLETED LOGIC
   // ===========================
   if (gameCompleted()) {
     // Define gameCompleted() logic to check if the game is over
@@ -395,7 +395,10 @@ function updateMoveCounter() {
     const endPopover = document.getElementById("game-finished");
     const finishedLevelText = document.querySelector(".level-complete").textContent = `Great! You completed level ${currentLevel} in ${moveCount} moves and with ${timeTaken} seconds left.`;
     endPopover.showPopover();
-    //alert(`Great! You finished in ${moveCount} moves and ${timeTaken} seconds left.`);
+    // Event to trigger resetGame when the popover is closed when clicking the backdrop
+    endPopover.addEventListener("beforetoggle", (event) => {
+        levelUp();
+    });
   
     const completedPopover = document.getElementById("game-finished");
     if (completedPopover) {

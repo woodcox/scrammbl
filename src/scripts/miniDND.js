@@ -292,7 +292,7 @@ function createMiniDND() {
   
     return {
       onDrop(callback) {
-        window.addEventListener("dropped", callback);
+        document.addEventListener("dropped", callback);
       }
     };
   }

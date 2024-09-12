@@ -20,4 +20,4 @@
 *         level13: Array<{index: string, correctPositions: Object<string, string}>}
 *        }}
 */
-var gameDataArray;
+gameDataArray

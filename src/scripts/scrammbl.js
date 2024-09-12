@@ -526,6 +526,7 @@ function startTimer() {
       const resetButton = document.getElementById("resetGame");
       if (resetButton) {
         resetButton.addEventListener("click", resetGame);
+        resetButton.addEventListener("touchstart", resetGame);
       }
 
       // Event to trigger resetGame when the popover is closed when clicking the backdrop
@@ -695,6 +696,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const howToButton = document.getElementById("howTo");
   if (howToButton) {
     howToButton.addEventListener("click", () => {
+      howToPlayPopover.showPopover();
+    });
+    howToButton.addEventListener("touchstart", () => {
       howToPlayPopover.showPopover();
     });
   }

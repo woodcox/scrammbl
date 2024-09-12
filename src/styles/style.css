@@ -239,6 +239,12 @@
   button:hover {
 	background: color-mix(in hsl, steelblue, black 8%);
   }
+
+  .fx-r {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+  }
   
   .timer {
 	grid-area: timer;

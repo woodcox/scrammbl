@@ -81,9 +81,14 @@ rep_css
 		  </div>
 		  <div class="completed" id="game-finished" popover>
 			<p class="level-complete">Great! You completed level</p>
-			<button id="levelUp" popovertargetaction="hide" popovertarget="game-finished">
-			  Next Level
-			</button>
+			<div class="fx-r">
+				<button id="levelUp" popovertargetaction="hide" popovertarget="game-finished">
+				  Next Level
+				</button>
+		  <button id="resetGame" popovertargetaction="hide" popovertarget="game-over">
+				  Replay Level
+				</button>
+			  </div>
 		  </div>
 		</middle-area>
 		<div class="move drop swap" data-slot="a1">

@@ -1,6 +1,6 @@
 node_modules
-zip
-public
+#zip
+#public
 temp
 package-lock.json
 .vscode

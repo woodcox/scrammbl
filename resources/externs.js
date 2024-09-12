@@ -9,4 +9,4 @@
  * Keep canvas roundRect (gets mangled for some reason)
  * @record
  */
-CanvasRenderingContext2D.prototype.roundRect
+correctPositions

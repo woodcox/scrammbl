@@ -732,7 +732,7 @@ miniDND.onDrop((event) => {
 // Initialize when the page loads
 document.addEventListener("DOMContentLoaded", () => {
   const currentLevel = parseInt(window.localStorage.getItem("13kjsgames.frantic13.currentLevel")) || 1;
-  const howToPlayPopover = document.getElementById("howToPlay");
+  /*const howToPlayPopover = document.getElementById("howToPlay");
                                                    // Check if it's level 1
   //if (currentLevel === 1) {
     howToPlayPopover.showPopover();  // Show how to play popover
@@ -742,7 +742,7 @@ document.addEventListener("DOMContentLoaded", () => {
     howToButton.addEventListener("click", () => {
       howToPlayPopover.showPopover();
     });
-  }
+  }*/
   displayNextLetter(); // Show the first letter in the spawn tile on load
   calculateStats(); // Calculate and display stats on page load
   updateLevelDisplay(currentLevel);

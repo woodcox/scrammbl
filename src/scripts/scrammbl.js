@@ -400,6 +400,27 @@ function updateMoveCounter() {
 }
 
 // ======================
+// LEVEL STATE - LEVEL UP, REPLAY, RESET
+// ======================
+
+function levelUp() {
+  location.reload;
+}
+
+function replayLevel() {
+  location.reload;
+}
+
+function resetGameProgress() {
+  window.localStorage.setItem("13kjsgames.scrammbl.currentLevel", 1); // Reset to level 1
+  window.localStorage.setItem("13kjsgames.scrammbl.lastGameIndex", 0); // Reset index
+}
+
+  function resetGame() {
+    location.reload();
+  }
+
+// ======================
 // PAST GAME STATS
 // ======================
 
@@ -539,79 +560,6 @@ function resetTimer() {
 }
 
 // ======================
-// RESET GAME
-// ======================
-/*let initialTileStates = {};
-
-// Function to initialize the state of each tile
-function initializeTileStates() {
-  document.querySelectorAll(".move").forEach((slot) => {
-    const tileDiv = slot.querySelector(".drag");
-    const slotId = slot.getAttribute("data-slot");
-    initialTileStates[slotId] = {
-      content: tileDiv.innerHTML,
-      tileData: tileDiv.dataset.tile
-    };
-  });
-}
-
-function updateTilesBasedOnCorrectPositions(correctPositions) {
-  const slots = document.querySelectorAll(".move");
-  slots.forEach((slot) => {
-    const tileDiv = slot.querySelector(".drag");
-    const slotId = slot.getAttribute("data-slot");
-
-    // Check and set tile based on correctPositions
-    if (!correctPositions[slotId]) {
-      tileDiv.innerHTML = correctPositions[slotId];
-      //tileDiv.dataset.tile = "correct"; // Or any specific value indicating correct position
-    }
-  });
-} */
-
-function resetGame() {
-  console.log("Game reset!");
-  location.reload();
-  /*
-  // Reset the game state (moves, tiles, etc.)
-  moveCount = 0; // Reset the move counter
-  timeLeft = 13; // Reset the timer back to the initial value
-  timerStarted = false;
-  clearInterval(timerInterval);
-
-  // Reset the move counter display
-  const moveCounter = document.querySelector(
-    "game-data-wrapper span:first-child"
-  );
-  if (moveCounter) {
-    moveCounter.textContent = `Moves: ${moveCount}`;
-  }
-
-  // Get today's game data and correct positions
-  const todayGameData = getTodayGameData();
-  if (!todayGameData) {
-    console.error("No game data available for today.");
-    return;
-  }
-
-  const correctPositions = todayGameData.correctPositions;
-
-  initializeTileStates();
-
-  // Display the first letter in the spawn tile
-  displayNextLetter();
-
-  updateTimerDisplay(); // Reset the timer display
-  updateTimerColor(timeLeft); // Reset the timer color
-
-  // Hide the game over popover if necessary
-  const popover = document.getElementById("game-over");
-  if (popover) {
-    popover.hidePopover(); // Ensure popover is hidden when the game resets
-  }*/
-}
-
-// ======================
 // GAME COMPLETED
 // ======================
 function gameCompleted() {
@@ -646,15 +594,6 @@ function gameCompleted() {
 
   // If all slots except the spawn tile are correct and not empty, return true
   return true;
-}
-
-// ======================
-// RESET LEVELS AND INDEX
-// ======================
-
-function resetGameProgress() {
-  window.localStorage.setItem("13kjsgames.scrammbl.currentLevel", 1); // Reset to level 1
-  window.localStorage.setItem("13kjsgames.scrammbl.lastGameIndex", 0); // Reset index
 }
 
 // ======================

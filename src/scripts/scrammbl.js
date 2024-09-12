@@ -223,8 +223,7 @@ function updateLevelDisplay(currentLevel) {
 
 // Update next game index based on failure or success
 function updateNextGameIndex(success) {
-  const levelKey = `level${currentLevel}`;
-  const levelData = gameDataArray[levelKey];
+  const levelData = gameDataArray[`level${currentLevel}`];
 
   if (success) {
     // Move to the next level and reset the index if the level was completed
@@ -253,7 +252,7 @@ function getGameData(level, index) {
     return null;
   }
 
-  const gameData = levelData.find((game) => game.index === index.toString());
+  const gameData = levelData.find((game) => game['index'] === index.toString());
 
   if (!gameData) {
     console.error(`No data available for index ${index} in level ${level}`);

@@ -393,7 +393,7 @@ function updateMoveCounter() {
     calculateStats(); // Optionally calculate average, PB, etc
     updateNextGameIndex(true); // Save to local storage to move to the next level
     const endPopover = document.getElementById("game-finished");
-    const finishedLevelText = document.querySelector(".level-complete").textContent = `Great! You completed level ${currentLevel} in ${moveCount} moves and with ${timeTaken} seconds left.`;
+    const finishedLevelText = document.querySelector(".level-complete").textContent = `Great! You completed level ${currentLevel -1} in ${moveCount} moves and with ${timeTaken} seconds left.`;
     endPopover.showPopover();
     // Event to trigger resetGame when the popover is closed when clicking the backdrop
     endPopover.addEventListener("beforetoggle", (event) => {

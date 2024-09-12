@@ -41,4 +41,4 @@ HTMLDialogElement.prototype.showPopover = function() {};
  * Closes the popover.
  * @return {void}
  */
-HTMLDialogElement.prototype.close = function() {};
+HTMLDialogElement.prototype.hidePopover = function() {};

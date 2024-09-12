@@ -212,8 +212,6 @@ var gameDataArray = {
 
 let currentLevel = parseInt(window.localStorage.getItem("13kjsgames.scrammbl.currentLevel")) || 1;
 
-console.log(currentLevel);
-
 let lastIndex = parseInt(window.localStorage.getItem("13kjsgames.scrammbl.lastGameIndex")) || 0;
 
 let hasFailedLastGame = window.localStorage.getItem("13kjsgames.scrammbl.hasFailedLastGame") === "true";
@@ -266,7 +264,8 @@ function getGameData(level, index) {
 // Use the correctPositions from the current game data
 const currentGameData = getGameData(currentLevel, lastIndex);
 
-let correctPositions = {};
+var correctPositions = {};
+console.log(correctPositions);
 
 if (!currentGameData) {
   console.error("No game data available.");

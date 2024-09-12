@@ -396,6 +396,12 @@ function updateMoveCounter() {
     const finishedLevelText = document.querySelector(".level-complete").textContent = `Great! You completed level ${currentLevel} in ${moveCount} moves and with ${timeTaken} seconds left.`;
     endPopover.showPopover();
     //alert(`Great! You finished in ${moveCount} moves and ${timeTaken} seconds left.`);
+  
+    const completedPopover = document.getElementById("game-finished");
+    if (completedPopover) {
+      document.getElementById("levelUp").addEventListener("click", levelUp);
+      document.getElementById("replayLevel").addEventListener("click", replayLevel);
+    }
   }
 }
 
@@ -404,11 +410,15 @@ function updateMoveCounter() {
 // ======================
 
 function levelUp() {
-  location.reload;
+  console.log("Next level");
+  location.reload();
 }
 
 function replayLevel() {
-  location.reload;
+  
+  console.log("Replay level");
+  updateNextGameIndex(false);
+  location.reload();
 }
 
 function resetGameProgress() {
@@ -416,9 +426,10 @@ function resetGameProgress() {
   window.localStorage.setItem("13kjsgames.scrammbl.lastGameIndex", 0); // Reset index
 }
 
-  function resetGame() {
-    location.reload();
-  }
+function resetGame() {
+  console.log("Game reset");
+  location.reload();
+}
 
 // ======================
 // PAST GAME STATS

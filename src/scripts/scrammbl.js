@@ -6,6 +6,26 @@ const miniDND = createMiniDND();
 // GAME DATA
 // ======================
 // The correct positions of the letters as JSON data
+
+
+/**
+ * @nocollapse
+ * @type {{
+*   level1: Array<{index: string, correctPositions: {[key: string]: string}}>,
+*   level2: Array<{index: string, correctPositions: {[key: string]: string}}>,
+*   level3: Array<{index: string, correctPositions: {[key: string]: string}}>,
+*   level4: Array<{index: string, correctPositions: {[key: string]: string}}>,
+*   level5: Array<{index: string, correctPositions: {[key: string]: string}}>,
+*   level6: Array<{index: string, correctPositions: {[key: string]: string}}>,
+*   level7: Array<{index: string, correctPositions: {[key: string]: string}}>,
+*   level8: Array<{index: string, correctPositions: {[key: string]: string}}>,
+*   level9: Array<{index: string, correctPositions: {[key: string]: string}}>,
+*   level10: Array<{index: string, correctPositions: {[key: string]: string}}>,
+*   level11: Array<{index: string, correctPositions: {[key: string]: string}}>,
+*   level12: Array<{index: string, correctPositions: {[key: string]: string}}>,
+*   level13: Array<{index: string, correctPositions: {[key: string]: string}}>,
+* }}
+*/
 const gameDataArray = {
   level1: [
     {

@@ -220,6 +220,8 @@ function updateLevelDisplay(currentLevel) {
   document.querySelector(".level").textContent = `Level ${currentLevel}`;
 }
 
+const MAX_LEVEL = 13;
+
 // Update next game index based on failure or success
 function updateNextGameIndex(success) {
   const levelData = gameDataArray[`level${currentLevel}`];
@@ -227,6 +229,13 @@ function updateNextGameIndex(success) {
   if (success) {
     // Move to the next level and reset the index if the level was completed
     currentLevel++;
+
+    if (currentLevel > MAX_LEVEL) {
+      // Game completed
+      showCompletionScreen();
+      return { currentLevel: MAX_LEVEL, lastIndex: 0 };  // Ensure it doesn't exceed MAX_LEVEL
+    }
+    
     window.localStorage.setItem("13kjsgames.scrammbl.currentLevel", currentLevel);
     //updateLevelDisplay(currentLevel); // Update the level display
     lastIndex = 0; // Start from the first index for the new level

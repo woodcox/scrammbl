@@ -208,7 +208,6 @@
 	width: min(100%, 60ch);
 	font-weight: 400;
 	height: min(100%, 70ch);
-  	max-height: 100dvh;
   }
 
   #howToPlay li {

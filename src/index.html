@@ -72,21 +72,24 @@ rep_css
 		  </middle-tile>
 		  <p class="level">Level &nbsp;&nbsp;</p>
 		  <div class="endgame" id="game-over" popover>
-			<p>Time's up! Game over.</p>
+			<p>Time's up! Game over. 😵💀😭</p>
 			<button id="resetGame" popovertargetaction="hide" popovertarget="game-over">
 			  Retry
 			</button>
 		  </div>
-		  <div class="completed" id="game-finished" popover>
+		  <div class="completed" id="level-finished" popover>
 			<p class="level-complete">Great! You completed level</p>
 			<div class="fx-r">
-				<button id="levelUp" popovertargetaction="hide" popovertarget="game-finished">
+				<button id="levelUp" popovertargetaction="hide" popovertarget="level-finished">
 				  Next Level
 				</button>
-		  <button id="replayLevel" popovertargetaction="hide" popovertarget="game-finished">
+		  <button id="replayLevel" popovertargetaction="hide" popovertarget="level-finished">
 				  Replay Level
 				</button>
 			  </div>
+		  </div>
+		  <div class="game-finished">
+			<button id="resetGameProgress" popovertargetaction="hide" popovertarget="level-finished"></button>
 		  </div>
 		</middle-area>
 		<div class="move drop swap" data-slot="a1">

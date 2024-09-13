@@ -401,15 +401,30 @@ function updateMoveCounter() {
     storeGameData(moveCount, timeTaken); // Store the game data with time taken
     calculateStats(); // Optionally calculate average, PB, etc
     updateNextGameIndex(true); // Save to local storage to move to the next level
-    const endPopover = document.getElementById("game-finished");
-    const finishedLevelText = document.querySelector(".level-complete").textContent = `Great! You completed level ${currentLevel -1} in ${moveCount} moves and with ${timeTaken} seconds left.`;
-    endPopover.showPopover();
-    // Event to trigger resetGame when the popover is closed when clicking the backdrop
-    endPopover.addEventListener("beforetoggle", (event) => {
-        levelUp();
-    });
+    
+    if (levelData.currentLevel >= 13) {
+      // Show final completion screen if game is completed
+      const endPopover = document.getElementById("level-finished");
+      if (endPopover) {
+        document.querySelector(".level-complete").textContent = `Congratulations! You completed the game. 🤩🏆🏁`;
+        endPopover.showPopover(); 
+        endPopover.addEventListener("beforetoggle", () => {
+          resetGameProgress();
+        });
+      }
+    } else {
+      // Show level completion popover for next level
+      const endPopover = document.getElementById("level-finished");
+      if (endPopover) {
+        document.querySelector(".level-complete").textContent = `Great! You completed level ${currentLevel - 1} in ${moveCount} moves and with ${timeTaken} seconds left. 😄👍🚀`;
+        endPopover.showPopover();
+        endPopover.addEventListener("beforetoggle", () => {
+          levelUp();
+        });
+      }
+    }
   
-    const completedPopover = document.getElementById("game-finished");
+    const completedPopover = document.getElementById("level-finished");
     if (completedPopover) {
       document.getElementById("levelUp").addEventListener("click", levelUp);
       document.getElementById("levelUp").addEventListener("touchstart", levelUp);
@@ -439,6 +454,7 @@ function replayLevel() {
 function resetGameProgress() {
   window.localStorage.setItem("13kjsgames.scrammbl.currentLevel", 1); // Reset to level 1
   window.localStorage.setItem("13kjsgames.scrammbl.lastGameIndex", 0); // Reset index
+  location.reload();
 }
 
 function resetGame() {
@@ -703,12 +719,13 @@ document.addEventListener("DOMContentLoaded", () => {
   //if (currentLevel === 1) {
   howToPlayPopover.showPopover(); // Show how to play popover
   //}
+  /*
   const howToButton = document.getElementById("howToInfo");
   if (howToButton) {
     howToButton.addEventListener("click", () => {
       howToPlayPopover.showPopover();
     });
-  }
+  }*/
 
 
   howToPlayPopover.addEventListener('touchstart', function(event) {

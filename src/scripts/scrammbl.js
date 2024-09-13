@@ -696,10 +696,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const howToButton = document.getElementById("howTo");
   if (howToButton) {
     howToButton.addEventListener("click", () => {
-      howToPlayPopover.showPopover();
+      howToPlayPopover.togglePopover();
     });
     howToButton.addEventListener("touchstart", () => {
-      howToPlayPopover.showPopover();
+      howToPlayPopover.togglePopover();
     });
   }
   displayNextLetter(); // Show the first letter in the spawn tile on load

@@ -1,12 +1,6 @@
-# JS13kGames Progressive Web App starter pack
+# JS13kGames 
 
-JS13K Games Competition website: https://js13kgames.com/
-
-This template targets the compo's **Mobile** category by providing a convenient way to build Progressive Web Apps.
-
-PWAs at minimum need a service worker script, web manifest and icon files, which increases the final archive size by around a kilobyte.
-
-The template also uses a sophisticated Gulp process to parse JS code with Google Closure Compiler and to pack it along with any CSS into a single minified HTML file. Additional compression is achieved utilizing Roadroller JS packer. Once successfully built the game will be opened in the default browser with BrowserSync live-reload enabled. Any modification in src/ folder will invoke a game reload on the localhost.
+This is a 13k JS game 2024 called Scrammbl.
 
 ## Installation
 Run **`npm install`** to install build dependencies.

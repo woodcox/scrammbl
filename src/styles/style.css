@@ -182,18 +182,20 @@
   
   [popover] {
 	width: min(100%, 40ch);
-	height: 25dvh;
+	height: 28dvh;
 	position: fixed;
-	background-color: black;
+	background-color: #101720;
 	color: whitesmoke;
 	border: var(--tile-border);
 	font-size: var(--font);
 	font-weight: 600;
-	padding: 20px;
+	padding: 5ch;
+  	text-wrap: balance;
   }
   [popover]:popover-open {
 	display: flex;
 	flex-direction: column;
+	text-align: center;
 	align-items: center;
 	justify-content: center;
 	animation: slideIn 0.2s ease-in-out forwards;
@@ -208,8 +210,13 @@
 	font-weight: 400;
 	height: min(100dvh, 70ch);
   }
+
+  #howToPlay li {
+    text-align: start;
+  }
+
   #howToPlay li, #howToPlay p {
-	padding-bottom: 10px;
+	padding-bottom: 1.5ch;
   }
   
   @keyframes slideIn {

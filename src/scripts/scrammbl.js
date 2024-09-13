@@ -232,7 +232,7 @@ function updateNextGameIndex(success) {
 
     if (currentLevel > MAX_LEVEL) {
       // Game completed
-      showCompletionScreen();
+      //showCompletionScreen();
       return { currentLevel: MAX_LEVEL, lastIndex: 0 };  // Ensure it doesn't exceed MAX_LEVEL
     }
     

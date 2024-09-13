@@ -701,6 +701,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const howToPlayPopover = document.getElementById("howToPlay"); 
   if (currentLevel === 1) {
     howToPlayPopover.showPopover();  // Show how to play popover
+
+    howToPlayPopover.addEventListener('touchstart', function(event) {
+  event.stopPropagation(); // Stop the event from affecting parent elements
+}, { passive: false });
+
+howToPlayPopover.addEventListener('touchmove', function(event) {
+  event.stopPropagation(); // Prevent interference with scrolling
+}, { passive: false });
+
   }
   const howToButton = document.getElementById("howTo");
   if (howToButton) {

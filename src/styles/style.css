@@ -189,7 +189,7 @@
 	border: var(--tile-border);
 	font-size: var(--font);
 	font-weight: 600;
-	padding: 5ch;
+	padding: 20px;
   	text-wrap: balance;
   }
   [popover]:popover-open {
@@ -208,7 +208,8 @@
 	--font: 0.8rem;
 	width: min(100%, 60ch);
 	font-weight: 400;
-	height: min(100dvh, 70ch);
+	max-height: min(100dvh, 70ch);
+	overflow-y: auto;
   }
 
   #howToPlay li {

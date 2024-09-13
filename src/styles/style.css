@@ -197,8 +197,10 @@
 	flex-direction: column;
 	text-align: center;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	animation: slideIn 0.2s ease-in-out forwards;
+	max-height: 100dvh;
+	overflow-y: auto;
   }
   [popover]:popover-open::backdrop {
 	animation: darken 0.2s ease-in-out forwards;
@@ -208,8 +210,8 @@
 	--font: 0.8rem;
 	width: min(100%, 60ch);
 	font-weight: 400;
-	max-height: min(100dvh, 70ch);
-	overflow-y: auto;
+	
+	
   }
 
   #howToPlay li {

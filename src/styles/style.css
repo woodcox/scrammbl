@@ -215,8 +215,8 @@
     text-align: start;
   }
 
-  #howToPlay h1 {
-    padding-bottom: 0.8rem;
+  #howToPlay h2 {
+    margin-bottom: 0.2rem;
   }
 
   #howToPlay li, #howToPlay p {

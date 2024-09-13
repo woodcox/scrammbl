@@ -700,9 +700,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const currentLevel = parseInt(window.localStorage.getItem("13kjsgames.scrammbl.currentLevel")) || 1; // Check if it's level 1
   const howToPlayPopover = document.getElementById("howToPlay");
   // Check if it's level 1
-  //if (currentLevel === 1) {
+  if (currentLevel === 1) {
   howToPlayPopover.showPopover(); // Show how to play popover
-  //}
+  }
   const howToButton = document.getElementById("howToInfo");
   if (howToButton) {
     howToButton.addEventListener("click", () => {

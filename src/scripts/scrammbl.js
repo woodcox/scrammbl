@@ -251,9 +251,11 @@ function updateNextGameIndex(success) {
   return { currentLevel, lastIndex };
 }
 
+let levelData = [];
+
 function getGameData(level, index) {
   const levelKey = `level${level}`;
-  const levelData = gameDataArray[levelKey];
+  levelData = gameDataArray[levelKey];
 
   if (!levelData) {
     console.error(`No data available for level ${level}`);

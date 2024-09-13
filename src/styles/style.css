@@ -221,6 +221,12 @@
   #howToPlay li, #howToPlay p {
 	padding-bottom: 1.5ch;
   }
+
+  #howToPlay button {
+    position: absolute;
+    top: -2px; /* Adjust as needed */
+    right: -2px;
+  }
   
   @keyframes slideIn {
 	to {

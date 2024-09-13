@@ -698,28 +698,27 @@ miniDND.onDrop((event) => {
 // Initialize when the page loads
 document.addEventListener("DOMContentLoaded", () => {
   const currentLevel = parseInt(window.localStorage.getItem("13kjsgames.scrammbl.currentLevel")) || 1; // Check if it's level 1
-  const howToPlayPopover = document.getElementById("howToPlay"); 
+  const howToPlayPopover = document.getElementById("howToPlay");
+  // Check if it's level 1
   //if (currentLevel === 1) {
-    howToPlayPopover.showPopover();  // Show how to play popover
-
-    howToPlayPopover.addEventListener('touchstart', function(event) {
-  event.stopPropagation(); // Stop the event from affecting parent elements
-}, { passive: false });
-
-howToPlayPopover.addEventListener('touchmove', function(event) {
-  event.stopPropagation(); // Prevent interference with scrolling
-}, { passive: false });
-
+  howToPlayPopover.showPopover(); // Show how to play popover
   //}
-  const howToButton = document.getElementById("howTo");
+  const howToButton = document.getElementById("howToInfo");
   if (howToButton) {
     howToButton.addEventListener("click", () => {
-      howToPlayPopover.togglePopover();
-    });
-    howToButton.addEventListener("touchstart", () => {
-      howToPlayPopover.togglePopover();
+      howToPlayPopover.showPopover();
     });
   }
+
+
+  howToPlayPopover.addEventListener('touchstart', function(event) {
+    event.stopPropagation(); // Stop the event from affecting parent elements
+  }, { passive: false });
+
+  howToPlayPopover.addEventListener('touchmove', function(event) {
+    event.stopPropagation(); // Prevent interference with scrolling
+  }, { passive: false });
+
   displayNextLetter(); // Show the first letter in the spawn tile on load
   calculateStats(); // Calculate and display stats on page load
   updateLevelDisplay(currentLevel);

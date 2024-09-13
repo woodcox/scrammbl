@@ -34,7 +34,7 @@
   }
   
   h1 {
-	padding: 0.5rem;
+	padding: 0.4rem;
 	color: white;
 	font-family: "georgia", serif;
 	font-weight: 600;
@@ -190,7 +190,7 @@
 	font-size: var(--font);
 	font-weight: 600;
 	padding: 20px;
-  	text-wrap: balance;
+  	text-wrap: pretty;
   }
   [popover]:popover-open {
 	display: flex;

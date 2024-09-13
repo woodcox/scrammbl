@@ -401,7 +401,7 @@ function updateMoveCounter() {
     storeGameData(moveCount, timeTaken); // Store the game data with time taken
     calculateStats(); // Optionally calculate average, PB, etc
     updateNextGameIndex(true); // Save to local storage to move to the next level
-    const endPopover = document.getElementById("game-finished");
+    const endPopover = document.getElementById("level-finished");
     const finishedLevelText = document.querySelector(".level-complete").textContent = `Great! You completed level ${currentLevel -1} in ${moveCount} moves and with ${timeTaken} seconds left.`;
     endPopover.showPopover();
     // Event to trigger resetGame when the popover is closed when clicking the backdrop
@@ -409,7 +409,7 @@ function updateMoveCounter() {
         levelUp();
     });
   
-    const completedPopover = document.getElementById("game-finished");
+    const completedPopover = document.getElementById("level-finished");
     if (completedPopover) {
       document.getElementById("levelUp").addEventListener("click", levelUp);
       document.getElementById("levelUp").addEventListener("touchstart", levelUp);

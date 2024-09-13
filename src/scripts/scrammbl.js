@@ -699,7 +699,7 @@ miniDND.onDrop((event) => {
 document.addEventListener("DOMContentLoaded", () => {
   const currentLevel = parseInt(window.localStorage.getItem("13kjsgames.scrammbl.currentLevel")) || 1; // Check if it's level 1
   const howToPlayPopover = document.getElementById("howToPlay"); 
-  if (currentLevel === 1) {
+  //if (currentLevel === 1) {
     howToPlayPopover.showPopover();  // Show how to play popover
 
     howToPlayPopover.addEventListener('touchstart', function(event) {
@@ -710,7 +710,7 @@ howToPlayPopover.addEventListener('touchmove', function(event) {
   event.stopPropagation(); // Prevent interference with scrolling
 }, { passive: false });
 
-  }
+  //}
   const howToButton = document.getElementById("howTo");
   if (howToButton) {
     howToButton.addEventListener("click", () => {
